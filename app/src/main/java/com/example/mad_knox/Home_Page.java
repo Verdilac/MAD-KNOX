@@ -1,6 +1,7 @@
 package com.example.mad_knox;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +10,9 @@ import android.widget.ImageView;
 
 public class Home_Page extends AppCompatActivity {
 
-    private ImageView hamburger_menu;
-    private ImageView profile_btn;
-    private ImageView cart_btn;
+    private ImageView hamburger_menu, profile_btn, cart_btn;
+
+    private CardView card1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class Home_Page extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         profile_btn = (ImageView) findViewById(R.id.profile_btn);
+        card1 = (CardView) findViewById(R.id.card1);
 
         // Profile Btn
         profile_btn.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +28,15 @@ public class Home_Page extends AppCompatActivity {
             public void onClick(View view) {
                 Intent login_page_intent = new Intent(Home_Page.this, Login_Page.class);
                 startActivity(login_page_intent);
+            }
+        });
+
+        // Add Product Details form trigger
+        card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent product_details_form_intent = new Intent(Home_Page.this, Product_Details_Page.class);
+                startActivity(product_details_form_intent);
             }
         });
 

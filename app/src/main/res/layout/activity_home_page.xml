@@ -20,15 +20,6 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent">
 
-<!--            <com.google.android.material.appbar.MaterialToolbar-->
-<!--                android:id="@+id/topAppBar"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="?attr/actionBarSize"-->
-
-<!--                app:navigationIcon="@drawable/hamburger_menu"-->
-<!--                style="@style/Widget.MaterialComponents.Toolbar.Primary"-->
-<!--                />-->
-
             <TextView
                 android:id="@+id/Knox_Heading"
                 android:layout_width="wrap_content"
@@ -103,33 +94,34 @@
 
             <!--Row 1-->
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
+                android:id="@+id/card1"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center">
+                    android:padding="16dp">
 
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/home_icon_1" />
-                    
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:text="Calender"
                         android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="Calender" />
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
