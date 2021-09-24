@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MAD-KNOX</string>
+    <string name="heading">E-Market</string>
+    <string name="slogan">For all your household needs</string>
+    <string name="login_email">Email Address</string>
+    <string name="login_password">Password</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="reg_name">Name</string>
+    <string name="reg_email">Email Address</string>
+    <string name="reg_password">Password</string>
+    <string name="register_btn">Register</string>
+    <string name="reg_phone">Phone Number</string>
 </resources>
