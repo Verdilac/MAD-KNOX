@@ -12,16 +12,15 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="28dp"
         android:layout_marginRight="30dp"
-android:textAlignment="center"
         android:text="Payment Gateway"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.772" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -75,8 +74,8 @@ android:textAlignment="center"
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewForm"
-        android:layout_width="368dp"
-        android:layout_height="280dp"
+        android:layout_width="376dp"
+        android:layout_height="250dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
@@ -105,6 +104,7 @@ android:textAlignment="center"
 
             <!--            Name-->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/holder_namelayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -113,8 +113,9 @@ android:textAlignment="center"
                 android:hint="Card Holders Name">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/holder_name_"
                     android:layout_width="match_parent"
-                    android:layout_height="43dp" />
+                    android:layout_height="42dp" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -122,6 +123,7 @@ android:textAlignment="center"
 
             <!--          Card number  -->
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/card_nolayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -130,6 +132,7 @@ android:textAlignment="center"
                 android:hint="Card Number">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/card_no_"
                     android:layout_width="match_parent"
                     android:layout_height="43dp" />
 
@@ -180,20 +183,6 @@ android:textAlignment="center"
             </LinearLayout>
 
             <!--            Expiration date-->
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="165dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:hint="Card Number">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="43dp" />
-
-
-            </com.google.android.material.textfield.TextInputLayout>
 
 
             <CheckBox
@@ -232,6 +221,35 @@ android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewForm" />
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/holder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="name" />
+
+
+        <EditText
+            android:id="@+id/card_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="number"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/payButtonSection"
         android:layout_width="match_parent"
@@ -262,10 +280,12 @@ android:textAlignment="center"
                 />
 
             <Button
+                android:id="@+id/btn_pay"
                 android:layout_width="wrap_content"
                 android:layout_height="101dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/ash"
+
+                android:onClick="createData"
                 android:text="Paynow" />
         </LinearLayout>
 
