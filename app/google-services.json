@@ -1,33 +1,55 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "59690366238",
     "project_id": "mad-knox",
     "storage_bucket": "mad-knox.appspot.com"
+=======
+    "project_number": "1049771823474",
+    "project_id": "mad-knox-63fe5",
+    "storage_bucket": "mad-knox-63fe5.appspot.com"
+>>>>>>> 19161a621231824a7ed1f0d7bc812920d878b023
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:59690366238:android:392ea35877eb712b4b050f",
+=======
+        "mobilesdk_app_id": "1:1049771823474:android:4bb89b45f5afd3e1b4cdeb",
+>>>>>>> 19161a621231824a7ed1f0d7bc812920d878b023
         "android_client_info": {
           "package_name": "com.example.mad_knox"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "59690366238-7megb0mrsqp1abafnvbd849b362t3cgn.apps.googleusercontent.com",
+=======
+          "client_id": "1049771823474-j5tm9j1bem56bsdvaj4t184laoir0nje.apps.googleusercontent.com",
+>>>>>>> 19161a621231824a7ed1f0d7bc812920d878b023
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyAIyKYKYD0j3NYxpDi9bbjmgez9qleip84"
+=======
+          "current_key": "AIzaSyAsOIlBhrGa8ilxsVUGA_S26VIzvzUIEzo"
+>>>>>>> 19161a621231824a7ed1f0d7bc812920d878b023
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "59690366238-7megb0mrsqp1abafnvbd849b362t3cgn.apps.googleusercontent.com",
+=======
+              "client_id": "1049771823474-j5tm9j1bem56bsdvaj4t184laoir0nje.apps.googleusercontent.com",
+>>>>>>> 19161a621231824a7ed1f0d7bc812920d878b023
               "client_type": 3
             }
           ]

@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+<<<<<<< HEAD
             android:name=".Product_Listing_Page"
             android:exported="true" />
         <activity
@@ -28,6 +29,9 @@
             android:exported="true" />
         <activity
             android:name=".Login_Page"
+=======
+            android:name=".PaymentActivity"
+>>>>>>> 19161a621231824a7ed1f0d7bc812920d878b023
             android:exported="true" />
         <activity
             android:name=".MainActivity"
