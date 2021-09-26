@@ -22,13 +22,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-        android:id="@+id/product_name"
+    <EditText
+        android:id="@+id/p_name"
         android:layout_width="332dp"
         android:layout_height="52dp"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="@string/product_name"
+        android:hint="@string/p_name"
         android:inputType="textPersonName"
         android:textColor="#706C6C"
         android:textSize="16sp"
@@ -38,49 +38,49 @@
         app:layout_constraintTop_toBottomOf="@+id/product_details_heading" />
 
     <EditText
-        android:id="@+id/product_description"
+        android:id="@+id/p_description"
         android:layout_width="332dp"
         android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="@string/product_description"
+        android:hint="@string/p_description"
         android:inputType="textPersonName"
         android:textColor="#706C6C"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_name" />
+        app:layout_constraintTop_toBottomOf="@+id/p_name" />
 
     <EditText
-        android:id="@+id/product_price"
+        android:id="@+id/p_price"
         android:layout_width="332dp"
         android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="@string/product_price"
+        android:hint="@string/p_price"
         android:inputType="numberDecimal"
         android:textColor="#706C6C"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_description" />
+        app:layout_constraintTop_toBottomOf="@+id/p_description" />
 
     <EditText
-        android:id="@+id/product_location"
+        android:id="@+id/p_location"
         android:layout_width="332dp"
         android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="@string/product_location"
+        android:hint="@string/p_location"
         android:inputType="textPersonName"
         android:textColor="#706C6C"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_price" />
+        app:layout_constraintTop_toBottomOf="@+id/p_price" />
 
     <ImageView
         android:id="@+id/back_arrow_btn"
@@ -95,14 +95,14 @@
         app:tint="#00C1D4" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/uploaded_product_img"
         android:layout_width="175dp"
         android:layout_height="121dp"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_location"
+        app:layout_constraintTop_toBottomOf="@+id/p_location"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -115,7 +115,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/uploaded_product_img" />
 
     <Button
         android:id="@+id/add_product_btn"
@@ -123,6 +123,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="28dp"
         android:backgroundTint="#00C1D4"
+        android:onClick="CreateProduct"
         android:text="@string/add_product_btn"
         android:textAlignment="center"
         android:textSize="24sp"

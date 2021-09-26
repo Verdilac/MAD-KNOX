@@ -13,10 +13,10 @@
     <string name="reg_phone">Phone Number</string>
     <string name="name_id">Enter the Name</string>
     <string name="product_details_heading">Product Details</string>
-    <string name="product_name">Enter Product Name</string>
-    <string name="product_description">Enter Product Description</string>
-    <string name="product_price">Enter Product Price</string>
-    <string name="product_location">Enter Product Location</string>
+    <string name="p_name">Enter Product Name</string>
+    <string name="p_description">Enter Product Description</string>
+    <string name="p_price">Enter Product Price</string>
+    <string name="p_location">Enter Product Location</string>
     <string name="add_product_btn">Add Product</string>
     <string name="product_img_upload_btn">Upload Image</string>
     <string name="cart_heading">Shopping Cart</string>
