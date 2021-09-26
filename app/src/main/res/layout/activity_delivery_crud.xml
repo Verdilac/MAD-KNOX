@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DeliveryCRUD">
 
     <TextView
         android:id="@+id/tv_info"
@@ -13,7 +13,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="64dp"
         android:text="@string/tv_info"
-        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +63,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="45dp"
         android:text="@string/tv_shippingAdd"
-        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
@@ -94,27 +92,38 @@
         app:layout_constraintTop_toBottomOf="@+id/et_ShippingAdd" />
 
     <Button
-        android:id="@+id/btn_Shipping_Cancel"
+        android:id="@+id/btn_Delivery_Del"
         android:layout_width="165dp"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#3B3C36"
-        android:text="@string/btn_Shipping_Cancel"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Shipping_Save"
+        android:backgroundTint="#54626F"
+        android:text="@string/btn_Delivery_Del"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Delivery_Edit"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_city" />
 
     <Button
-        android:id="@+id/btn_Shipping_Save"
+        android:id="@+id/btn_Delivery_Edit"
         android:layout_width="165dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#848482"
-        android:text="@string/btn_Shipping_Save"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Shipping_Cancel"
+        android:layout_height="48dp"
+        android:backgroundTint="#36454F"
+        android:text="@string/btn_Delivery_Edit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Delivery_Del"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_Shipping_Cancel"
-        app:rippleColor="@color/teal_700" />
+        app:layout_constraintStart_toEndOf="@+id/btn_Delivery_Del" />
+
+    <Button
+        android:id="@+id/btn_Delivery_Confirm"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/btn_Delivery_Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Delivery_Edit" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

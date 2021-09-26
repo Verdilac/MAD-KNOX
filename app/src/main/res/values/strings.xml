@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MAD-KNOX</string>
+    <string name="tv_info">Recipient Information</string>
+    <string name="et_name">Enter Your Name</string>
+    <string name="et_phone">Enter Your Phone Number</string>
+    <string name="et_email">Enter Your Email Address</string>
+    <string name="tv_shippingAdd">Shipping Address</string>
+    <string name="et_shippingAdd">Address</string>
+    <string name="et_city">City</string>
+    <string name="btn_Shipping_Cancel">Cancel</string>
+    <string name="btn_Shipping_Save">Save</string>
+    <string name="btn_Delivery_Del">Delete</string>
+    <string name="btn_Delivery_Edit">Edit</string>
+    <string name="btn_Delivery_Confirm">Confirm</string>
+    <string name="Delivery_Success_Msg">We Have Received Your Order Successfully !</string>
+    <string name="Delivery_status">Your Order Will Be Delivered Within Next 7 Working Days</string>
+    <string name="Time_Calc">DD / HH / MM</string>
+
+
 </resources>

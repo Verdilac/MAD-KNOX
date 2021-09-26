@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+            android:name=".FeedbackForm"
+            android:exported="true" />
+        <activity
+            android:name=".Display_Delivery"
+            android:exported="true" />
+        <activity
+            android:name=".DeliveryCRUD"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
