@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+            android:name=".SellersOutlet_k"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfile_k"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true" />
         <activity
