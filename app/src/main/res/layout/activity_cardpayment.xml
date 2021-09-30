@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewForm"
         android:layout_width="376dp"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
@@ -82,6 +82,7 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cardmonth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -89,7 +90,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
                     android:background="#00000000"
-                    android:hint="Card Number">
+                    android:hint="Month">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -99,13 +100,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cardyear"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:hint="Card Number">
+                    android:hint="Year">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -120,11 +122,30 @@
             <!--            Expiration date-->
 
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cardcvv"
+                android:layout_width="168dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="CVV"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_height="48dp"
                 android:background="#00000000"
+
                 android:text="Remember My Card For Next Purchase"
                 tools:layout_editor_absoluteX="107dp"
                 tools:layout_editor_absoluteY="529dp" />
@@ -133,15 +154,69 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="CardDataSubmission"
-        android:text="Button"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/payButtonSection"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewForm" />
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FF5555"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="Total:  "
+                android:textSize="18dp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#B83D3D"
+                android:onClick="CardDataSubmission"
+                android:text="Paynow" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="CardDataSubmission"-->
+<!--        android:text="Button"-->
+<!--        android:backgroundTint="#FF3C3C"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardViewForm" />-->
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
