@@ -23,12 +23,6 @@
                 android:padding="15dp"
                 android:src="?attr/homeAsUpIndicator" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Should put outlet name"
-                android:textAlignment="center"/>
-
         </RelativeLayout>
         <ImageView
             android:layout_width="390dp"
