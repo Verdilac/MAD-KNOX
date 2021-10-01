@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
+import android.view.animation.LinearInterpolator;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,6 +23,8 @@ public class Rvpayments extends AppCompatActivity {
     RecyclerView recyclerView;
     RVAdapter adapter;
     DAOCard dao;
+    boolean isLoading = false;
+    String key = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +42,32 @@ public class Rvpayments extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         dao = new DAOCard();
         loadData();
+
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+
+                LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+                int totalItem = linearLayoutManager.getItemCount();
+                int lastVisible = linearLayoutManager.findLastCompletelyVisibleItemPosition();
+                if(totalItem<lastVisible+3)
+                {
+                    if(!isLoading){
+                        isLoading = true;
+                        loadData();
+                    }
+                }
+            }
+        });
+
+
     }
 
     private void loadData(){
 
-        dao.get().addValueEventListener(new ValueEventListener() {
+        swipeRefreshLayout.setRefreshing(true);
+
+        dao.get(key).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
@@ -52,15 +76,18 @@ public class Rvpayments extends AppCompatActivity {
                 for(DataSnapshot data :snapshot.getChildren()){
                     Card card = data.getValue(Card.class);
                     cards.add(card);
+                    key = data.getKey();
                 }
                 adapter.setItems(cards);
                 adapter.notifyDataSetChanged();
+                isLoading=false;
+                swipeRefreshLayout.setRefreshing(false);
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                swipeRefreshLayout.setRefreshing(false);
             }
         });
     }

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
@@ -18,13 +20,16 @@ public class Cardpayment extends AppCompatActivity {
     TextInputLayout cardmonthlay;
     TextInputLayout cardyearlay;
     TextInputLayout cardcvvlay;
+    Button btn_pay;
     String name;
+
     String cardnumber;
     String cardmonth;
     String cardyear;
     String cardcvv;
     Card card;
     DatabaseReference dbref;
+
 
 
 
@@ -40,25 +45,52 @@ public class Cardpayment extends AppCompatActivity {
         cardmonthlay = findViewById(R.id.cardmonth);
         cardyearlay = findViewById(R.id.cardyear);
         cardcvvlay = findViewById(R.id.cardcvv);
+//        Card card_edit = (Card) getIntent().getSerializableExtra("EDIT");
+
+        DAOCard dao = new DAOCard();
+        btn_pay = findViewById(R.id.btn_pay);
+        btn_pay.setOnClickListener(v->{
+
+
+            name = holdername.getEditText().getText().toString().trim();
+            cardnumber = cardno.getEditText().getText().toString().trim();
+            cardmonth = cardmonthlay.getEditText().getText().toString().trim();
+            cardyear = cardyearlay.getEditText().getText().toString().trim();
+            cardcvv = cardcvvlay.getEditText().getText().toString().trim();
+
+            card.setName(name);
+            card.setNo(cardnumber);
+            card.setMonth(cardmonth);
+            card.setYear(cardyear);
+            card.setCvv(cardcvv);
+            dao.add(card).addOnSuccessListener(suc->{
+                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(er->{
+                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+            });
+
+        });
+
+
 
     }
-    public void CardDataSubmission(View view){
-        dbref = FirebaseDatabase.getInstance().getReference().child("Cards");
-
-        name = holdername.getEditText().getText().toString().trim();
-        cardnumber = cardno.getEditText().getText().toString().trim();
-        cardmonth = cardmonthlay.getEditText().getText().toString().trim();
-        cardyear = cardyearlay.getEditText().getText().toString().trim();
-        cardcvv = cardcvvlay.getEditText().getText().toString().trim();
-
-        card.setName(name);
-        card.setNo(cardnumber);
-        card.setMonth(cardmonth);
-        card.setYear(cardyear);
-        card.setCvv(cardcvv);
-
-        dbref.push().setValue(card);
-    }
+//    public void CardDataSubmission(View view){
+//
+//
+//        name = holdername.getEditText().getText().toString().trim();
+//        cardnumber = cardno.getEditText().getText().toString().trim();
+//        cardmonth = cardmonthlay.getEditText().getText().toString().trim();
+//        cardyear = cardyearlay.getEditText().getText().toString().trim();
+//        cardcvv = cardcvvlay.getEditText().getText().toString().trim();
+//
+//        card.setName(name);
+//        card.setNo(cardnumber);
+//        card.setMonth(cardmonth);
+//        card.setYear(cardyear);
+//        card.setCvv(cardcvv);
+//
+//        dbref.push().setValue(card);
+//    }
 
 
 

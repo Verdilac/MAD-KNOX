@@ -191,7 +191,6 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="#B83D3D"
-                android:onClick="CardDataSubmission"
                 android:text="Paynow" />
         </LinearLayout>
 
