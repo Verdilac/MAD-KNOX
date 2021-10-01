@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText name;
     EditText no;
-    Button submit,redirect;
+    Button submit,redirect,recy;
     DatabaseReference dbref;
     Card card;
 
@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         no = findViewById(R.id.no);
         submit = findViewById(R.id.submit);
         redirect = findViewById(R.id.redirection);
+
+
+        recy = findViewById(R.id.recy_view);
+
+        recy.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,Rvpayments.class);
+            startActivity(intent);
+        });
 
     }
 
