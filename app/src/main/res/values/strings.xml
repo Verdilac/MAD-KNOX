@@ -20,4 +20,6 @@
     <string name="add_product_btn">Add Product</string>
     <string name="product_img_upload_btn">Upload Image</string>
     <string name="cart_heading">Shopping Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
