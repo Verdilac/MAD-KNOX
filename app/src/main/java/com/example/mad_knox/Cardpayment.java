@@ -13,6 +13,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
+import java.util.HashMap;
+
 public class Cardpayment extends AppCompatActivity {
 
     TextInputLayout holdername;
@@ -45,7 +47,7 @@ public class Cardpayment extends AppCompatActivity {
         cardmonthlay = findViewById(R.id.cardmonth);
         cardyearlay = findViewById(R.id.cardyear);
         cardcvvlay = findViewById(R.id.cardcvv);
-//        Card card_edit = (Card) getIntent().getSerializableExtra("EDIT");
+//      Card card_edit = (Card) getIntent().getSerializableExtra("EDIT");
 
         DAOCard dao = new DAOCard();
         btn_pay = findViewById(R.id.btn_pay);
@@ -68,6 +70,30 @@ public class Cardpayment extends AppCompatActivity {
             }).addOnFailureListener(er->{
                 Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
             });
+
+
+//            HashMap<String,Object> hashMap = new HashMap<>();
+//            //make sure to test without trimming methode.
+//            hashMap.put("name",name);
+//            hashMap.put("no",cardnumber);
+//            hashMap.put("month",cardmonth);
+//            hashMap.put("year",cardyear);
+//            hashMap.put("cvv",cardcvv);
+//
+//            dao.update("-Mkzjg11hS6WJnDDXWi7",hashMap).addOnSuccessListener(suc->{
+//                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+//            }).addOnFailureListener(er->{
+//                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+//            });
+
+
+//            dao.remove("-Mkzjg11hS6WJnDDXWi7").addOnSuccessListener(suc->{
+//                Toast.makeText(this, "Record Removed", Toast.LENGTH_SHORT).show();
+//            }).addOnFailureListener(er->{
+//                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+//            });
+
+
 
         });
 

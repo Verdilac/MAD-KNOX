@@ -1,5 +1,8 @@
 package com.example.mad_knox;
 
+
+
+
 public class Card {
 
     private  String name;

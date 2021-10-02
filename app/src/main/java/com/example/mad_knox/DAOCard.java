@@ -5,11 +5,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
+import java.util.HashMap;
+
 public class DAOCard {
 
     private DatabaseReference databaseReference;
 
     public  DAOCard(){
+
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Cards");
     }
@@ -19,6 +22,19 @@ public class DAOCard {
 
          return databaseReference.push().setValue(card);
     }
+
+    public  Task<Void> update(String key, HashMap<String,Object> hashMap){
+
+//        make sure to test with changed db reference
+       return databaseReference.child(key).updateChildren(hashMap);
+
+    }
+
+    public Task<Void> remove(String key){
+        return  databaseReference.child(key).removeValue();
+    }
+
+
 
     public Query get(String key){
 
