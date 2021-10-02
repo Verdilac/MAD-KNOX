@@ -29,6 +29,12 @@
             android:layout_height="150dp"
             android:layout_centerVertical="true"/>
 
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
     </LinearLayout>
 
 
