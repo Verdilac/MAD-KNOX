@@ -21,7 +21,7 @@
     <ImageView
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:src="@drawable/googleg_standard_color_18"
+        android:src="@drawable/creditcardimg"
         android:id="@+id/img_emp"
         android:padding="5dp"/>
 
@@ -33,6 +33,7 @@
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
+               android:layout_marginTop="19dp"
                android:text="Text"
                android:textSize="20sp"
                android:layout_marginBottom="5dp"
@@ -41,6 +42,7 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:text="Text"
+               android:layout_marginTop="5dp"
                android:textSize="20sp"
                android:layout_marginBottom="5dp"
                android:id="@+id/txt_number"/>
