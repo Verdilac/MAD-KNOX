@@ -2,6 +2,7 @@ package com.example.mad_knox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -105,6 +106,13 @@ public class Cardpayment extends AppCompatActivity {
 
 
 
+        });
+
+
+        Button btn_addedit = findViewById(R.id.btn_addedit);
+        btn_addedit.setOnClickListener(view -> {
+            Intent intent = new Intent(this,Rvpayments.class);
+            startActivity(intent);
         });
 
 
