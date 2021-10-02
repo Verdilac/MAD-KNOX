@@ -1,10 +1,12 @@
 package com.example.mad_knox;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,6 +46,32 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         vh.txt_name.setText(card.getName());
         vh.txt_number.setText(card.getNo());
 
+        vh.txt_option.setOnClickListener(v->{
+            PopupMenu popupMenu = new PopupMenu(context,vh.txt_option);
+            popupMenu.inflate(R.menu.option_menu);
+            popupMenu.setOnMenuItemClickListener(item->{
+
+                switch (item.getItemId())
+                {
+                    case R.id.menu_edit:
+                        Intent intent = new Intent(context,Cardpayment.class);
+                        intent.putExtra("EDIT",card);
+                        context.startActivity(intent);
+                        break;
+                    case R.id.menu_remove:
+                        DAOCard dao = new DAOCard();
+                        dao.remove(card.getKey()).addOnSuccessListener(suc->{
+                            Toast.makeText(context, "Record Removed", Toast.LENGTH_SHORT).show();
+                        }).addOnFailureListener(er->{
+                    Toast.makeText(context, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+                        });
+                        break;
+                }
+                return false;
+
+            });
+            popupMenu.show();
+        });
 
     }
 

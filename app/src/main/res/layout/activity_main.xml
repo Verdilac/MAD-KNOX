@@ -51,20 +51,6 @@
         app:layout_constraintVertical_bias="0.111" />
 
     <Button
-        android:id="@+id/redirection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:onClick="redirection"
-        android:text="Redirect"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit"
-        app:layout_constraintVertical_bias="0.175" />
-
-    <Button
         android:id="@+id/recy_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,5 +60,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_redirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="redirection"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

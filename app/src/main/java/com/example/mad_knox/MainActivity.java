@@ -36,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         no = findViewById(R.id.no);
         submit = findViewById(R.id.submit);
-        redirect = findViewById(R.id.redirection);
+//        redirect = findViewById(R.id.redirection);
+
+
 
 
         recy = findViewById(R.id.recy_view);
@@ -45,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this,Rvpayments.class);
             startActivity(intent);
         });
+
+
+
+
+
+
 
     }
 
@@ -58,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void redirection (View view){
-        Intent intent = new Intent(this,Cardpayment.class);
+        Intent intent = new Intent(getApplicationContext(),Cardpayment.class);
         startActivity(intent);
     }
 

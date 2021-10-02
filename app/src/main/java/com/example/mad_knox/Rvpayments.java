@@ -75,6 +75,7 @@ public class Rvpayments extends AppCompatActivity {
 
                 for(DataSnapshot data :snapshot.getChildren()){
                     Card card = data.getValue(Card.class);
+                    card.setKey(data.getKey());
                     cards.add(card);
                     key = data.getKey();
                 }

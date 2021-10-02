@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -47,9 +48,18 @@ public class Cardpayment extends AppCompatActivity {
         cardmonthlay = findViewById(R.id.cardmonth);
         cardyearlay = findViewById(R.id.cardyear);
         cardcvvlay = findViewById(R.id.cardcvv);
-//      Card card_edit = (Card) getIntent().getSerializableExtra("EDIT");
+
+
+
+
+
+
 
         DAOCard dao = new DAOCard();
+
+
+
+
         btn_pay = findViewById(R.id.btn_pay);
         btn_pay.setOnClickListener(v->{
 

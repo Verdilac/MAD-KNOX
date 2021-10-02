@@ -1,12 +1,18 @@
 package com.example.mad_knox;
 
 
+import com.google.firebase.database.Exclude;
 
+import java.io.Serializable;
 
-public class Card {
+public class Card implements Serializable {
 
+    @Exclude
+    private  String key;
     private  String name;
     private  String no;
+
+
 
     public String getMonth() {
         return month;
@@ -52,6 +58,14 @@ public class Card {
 
     public void setNo(String no) {
         this.no = no;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
 }
