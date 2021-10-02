@@ -70,4 +70,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void lunchUpdate(View view){
+        Intent intent = new Intent(getApplicationContext(),CardUpdate.class);
+        startActivity(intent);
+
+    }
+
+
 }
