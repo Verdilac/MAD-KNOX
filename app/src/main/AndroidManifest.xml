@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+            android:name=".dispute.RVDispute"
+            android:exported="true" />
+        <activity
+            android:name=".dispute.DisputeHandle"
+            android:exported="true" />
+        <activity
+            android:name=".CardUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".Rvpayments"
+            android:exported="true" />
+        <activity
+            android:name=".Cardpayment"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
