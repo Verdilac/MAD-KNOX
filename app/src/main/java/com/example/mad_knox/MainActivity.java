@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        submit = findViewById(R.id.submit);
+
 
 
 
@@ -63,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, RVDispute.class);
             startActivity(intent);
 
+        });
+
+        Button btn_home_p = findViewById(R.id.btn_home_p);
+
+        btn_home_p.setOnClickListener(v->{
+            Intent intent = new Intent(this,Home_Page.class);
+            startActivity(intent);
         });
 
 

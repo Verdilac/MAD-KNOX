@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
         <entry key="..\:/Android Projects/MAD Lathindu Repo/MAD-KNOX/app/src/main/res/drawable/back_arrow_icon.xml" value="0.2796296296296296" />
         <entry key="..\:/Android Projects/MAD Lathindu Repo/MAD-KNOX/app/src/main/res/drawable/hamburger_menu.xml" value="0.3675925925925926" />
         <entry key="..\:/Android Projects/MAD Lathindu Repo/MAD-KNOX/app/src/main/res/drawable/profile_icon.xml" value="0.3675925925925926" />
@@ -17,8 +16,8 @@
         <entry key="..\:/Android Projects/MAD Lathindu Repo/MAD-KNOX/app/src/main/res/layout/activity_shopping_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Android Projects/MAD Lathindu Repo/MAD-KNOX/app/src/main/res/layout/layout_items_p.xml" value="0.3619791666666667" />
         <entry key="..\:/Android Projects/MAD Lathindu Repo/MAD-KNOX/app/src/main/res/menu/option_menu_p.xml" value="0.3619791666666667" />
-
         <entry key="..\:/MAD-KNOX/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Madintegration/MAD-KNOX/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/drawable/border.xml" value="0.3828125" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_card_update.xml" value="0.25" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_cardpayment.xml" value="0.22" />
@@ -30,7 +29,6 @@
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/layout_item.xml" value="0.3625" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/menu/disoption_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/menu/option_menu.xml" value="0.3625" />
-
       </map>
     </option>
   </component>

@@ -32,8 +32,6 @@
             android:exported="true" />
         <activity
             android:name=".Login_Page"
-
-            android:name=".dispute.RVDispute"
             android:exported="true" />
         <activity
             android:name=".dispute.DisputeHandle"
