@@ -15,11 +15,10 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText name;
-    EditText no;
+
     Button submit,redirect,recy;
-    DatabaseReference dbref;
-    Card card;
+
+
 
 
 
@@ -34,13 +33,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        card = new Card();
 
 
-        name = findViewById(R.id.name);
-        no = findViewById(R.id.no);
         submit = findViewById(R.id.submit);
-//        redirect = findViewById(R.id.redirection);
+
 
 
 
@@ -74,14 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void InsertData(View view){
-        dbref = FirebaseDatabase.getInstance().getReference().child("Cards");
 
-        card.setName(name.getText().toString().trim());
-        card.setNo(no.getText().toString().trim());
-
-        dbref.push().setValue(card);
-    }
 
     public void redirection (View view){
         Intent intent = new Intent(getApplicationContext(),Cardpayment.class);
