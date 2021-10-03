@@ -82,6 +82,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/p_price" />
 
+    <EditText
+        android:id="@+id/p_img_url"
+        android:layout_width="332dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/p_img_url"
+        android:inputType="textPersonName"
+        android:textColor="#706C6C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/add_product_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_location"
+        app:layout_constraintVertical_bias="0.0" />
+
     <ImageView
         android:id="@+id/back_arrow_btn"
         android:layout_width="30dp"
@@ -94,34 +111,11 @@
         app:srcCompat="@drawable/back_arrow_icon"
         app:tint="#00C1D4" />
 
-    <ImageView
-        android:id="@+id/uploaded_product_img"
-        android:layout_width="175dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/p_location"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/product_img_upload_btn"
-        android:layout_width="176dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#00d4c4"
-        android:text="@string/product_img_upload_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uploaded_product_img" />
-
     <Button
         android:id="@+id/add_product_btn"
         android:layout_width="332dp"
         android:layout_height="55dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="148dp"
         android:backgroundTint="#00C1D4"
         android:onClick="CreateProduct"
         android:text="@string/add_product_btn"
@@ -129,10 +123,8 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_img_upload_btn"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
