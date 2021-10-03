@@ -27,7 +27,12 @@ public class Product_Details_Page extends AppCompatActivity {
 
         back_arrow_btn = (ImageView) findViewById(R.id.back_arrow_btn);
 
-//        final EditText
+//        final EditText p_name = findViewById(R.id.p_name);
+//        final EditText p_description = findViewById(R.id.p_description);
+//        final EditText p_price = findViewById(R.id.p_price);
+//        final EditText p_location = findViewById(R.id.p_location);
+//        final EditText p_img_url = findViewById(R.id.p_img_url);
+
 
         p_name = (EditText) findViewById(R.id.p_name);
         p_description = (EditText) findViewById(R.id.p_description);
@@ -113,32 +118,6 @@ public class Product_Details_Page extends AppCompatActivity {
                     Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();    // Toasts the error
                 });
             }
-
-
-//            // Update
-//            HashMap<String,Object> hashMap = new HashMap<>();
-//            hashMap.put("Product_Name",p_name.getText().toString());
-//            hashMap.put("Product_Desc",p_description.getText().toString());
-//            hashMap.put("Product_Price",Integer.parseInt(p_price.getText().toString()));
-//            hashMap.put("Product_Location",p_location.getText().toString());
-//            hashMap.put("Product_Img",p_img_url.getText().toString());
-//
-//            dao.update("-Ml3DF9omSVPmWlLPZ0d",hashMap).addOnSuccessListener(suc -> {
-//                Toast.makeText(this, "Data Updated Successfully", Toast.LENGTH_SHORT).show();
-//                clearFormFields();
-//            }).addOnFailureListener(er -> {
-//                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();    // Toasts the error
-//            });
-
-
-//            // Delete
-//            dao.remove("-Ml2vJnypYeLr62tDJ46").addOnSuccessListener(suc -> {
-//                Toast.makeText(this, "Data Deleted Successfully", Toast.LENGTH_SHORT).show();
-//                clearFormFields();
-//            }).addOnFailureListener(er -> {
-//                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();    // Toasts the error
-//            });
-
 
         });
 
