@@ -25,12 +25,13 @@
         android:layout_marginTop="133dp"
         android:layout_marginBottom="160dp"
         android:onClick="redirection"
-        android:text="Button"
+        android:text="payment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_pinto" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_pinto"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_reupdate"
@@ -81,5 +82,31 @@
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ushan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delivery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pinto"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
+        android:text="feedback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/button_redirect"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ushan"
+        app:layout_constraintVertical_bias="0.101" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

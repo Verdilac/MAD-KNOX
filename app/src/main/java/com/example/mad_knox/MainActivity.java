@@ -75,6 +75,16 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button btn_ushan = findViewById(R.id.btn_ushan);
+        btn_ushan.setOnClickListener(v->{
+            Intent intent = new Intent(this,Delivery_Main.class);
+            startActivity(intent);
+        });
+        Button btn_feedback = findViewById(R.id.btn_feedback);
+        btn_feedback.setOnClickListener(v->{
+            Intent intent = new Intent(this,FeedbackCRUD.class);
+            startActivity(intent);
+        });
 
 
 
