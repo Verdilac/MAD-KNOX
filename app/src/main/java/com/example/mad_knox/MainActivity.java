@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button submit,redirect,recy;
-
+    //payment merged with productlisting
 
 
 
@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,Home_Page.class);
             startActivity(intent);
         });
+
+
 
 
 
