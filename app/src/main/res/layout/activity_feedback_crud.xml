@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="InsertFeed"
+    tools:context=".FeedbackCRUD">
+
+
+    <EditText
+        android:id="@+id/et_Feedname"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/et_Feedname"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_Feedemail"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/et_Feedemail"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Feedname" />
+
+    <EditText
+        android:id="@+id/et_Feedreview"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/et_Feedreview"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Feedemail" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="223dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_yourFeedback"
+        android:textColor="#6D9BC3"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_quality"
+        android:layout_width="199dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="190dp"
+        android:text="@string/tv_quality"
+        android:textColor="#9C2542"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Feedreview" />
+
+    <TextView
+        android:id="@+id/tv_response"
+        android:layout_width="199dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="190dp"
+        android:text="@string/tv_response"
+        android:textColor="#9C2542"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_quality" />
+
+    <TextView
+        android:id="@+id/tv_Satisfaction"
+        android:layout_width="199dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="190dp"
+        android:text="@string/tv_Satisfaction"
+        android:textColor="#9C2542"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_timelyResponse" />
+
+    <Button
+        android:id="@+id/btn_feed_cancel"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#91A3B0"
+        android:text="@string/btn_feed_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_feed_submit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_satisfaction" />
+
+    <Button
+        android:id="@+id/btn_feed_submit"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#36454F"
+        android:onClick="InsertFeed"
+        android:text="@string/btn_feed_submit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_feed_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_feed_cancel" />
+
+    <EditText
+        android:id="@+id/et_quality"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quality" />
+
+    <EditText
+        android:id="@+id/et_timelyResponse"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_response" />
+
+    <EditText
+        android:id="@+id/et_satisfaction"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Satisfaction" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

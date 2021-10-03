@@ -1,5 +1,50 @@
 <resources>
     <string name="app_name">MAD-KNOX</string>
+
+    <string name="tv_info">Recipient Information</string>
+    <string name="et_name">Enter Your Name</string>
+    <string name="et_phone">Enter Your Phone Number</string>
+    <string name="et_email">Enter Your Email Address</string>
+    <string name="tv_shippingAdd">Shipping Address</string>
+    <string name="et_shippingAdd">Address</string>
+    <string name="et_city">City</string>
+    <string name="btn_Shipping_Cancel">Cancel</string>
+    <string name="btn_Shipping_Save">Save</string>
+    <string name="btn_Delivery_Del">Delete</string>
+    <string name="btn_Delivery_Edit">Edit</string>
+    <string name="btn_Delivery_Confirm">Confirm</string>
+    <string name="Delivery_Success_Msg">We Have Received Your Order Successfully !</string>
+    <string name="Delivery_status">Your Order Will Be Delivered Within Next 7 Working Days</string>
+    <string name="Time_Calc">DD / HH / MM</string>
+    <string name="btn_Delivery_View">View</string>
+    <string name="btn_Delivery_Submit">Submit</string>
+    <string name="btn_bkto_main">X</string>
+    <string name="btn_Proceed_payment">Click here to Proceed</string>
+
+ 
+    <string name="et_Feedname">Enter Your Name</string>
+    <string name="et_Feedemail">Enter Your Email Address</string>
+    <string name="et_Feedreview">Leave a Review</string>
+    <string name="tv_yourFeedback">Your Feedback</string>
+    <string name="tv_quality">Quality</string>
+    <string name="rd_btn_Q_good">Good</string>
+    <string name="re_btn_Q_Ex">Excellent</string>
+    <string name="tv_response">Timely Response</string>
+    <string name="tv_Satisfaction">Overall Satisfaction</string>
+    <string name="rd_btn_T_good">Good</string>
+    <string name="rd_btn_T_Ex">Excellent</string>
+    <string name="rd_btn_O_good">Good</string>
+    <string name="rd_btn_O_Ex">Excellent</string>
+    <string name="btn_feed_cancel">Cancel</string>
+    <string name="btn_feed_submit">Submit</string>
+    <string name="btn_Feed_Del">Delete</string>
+    <string name="btn_Feed_Edit">Edit</string>
+    <string name="btn_Feed_Confirm">Confirm</string>
+    <string name="feed_success_message">Your Feedback has been Received Successfully!</string>
+    <string name="feed_thank">Thanks for Your Feedback...</string>
+    <string name="btn_back_feed">Back</string>
+
+
     <string name="heading">KNOX</string>
     <string name="slogan">For all your needs</string>
     <string name="login_email">Email Address</string>
@@ -24,4 +69,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="p_img_url">Enter Image URL</string>
     <string name="open_recycler_view">Open</string>
+
 </resources>
