@@ -66,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        Button btn_home_p = findViewById(R.id.btn_home_p);
+
+        btn_home_p.setOnClickListener(v->{
+            Intent intent = new Intent(this,Home_Page.class);
+            startActivity(intent);
+        });
+
 
         Button btn_pinto = findViewById(R.id.btn_pinto);
         btn_pinto.setOnClickListener(v->{

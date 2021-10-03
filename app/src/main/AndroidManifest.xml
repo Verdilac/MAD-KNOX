@@ -13,6 +13,21 @@
         android:theme="@style/Theme.MADKNOX">
         <activity
 
+            android:name=".FeedbackConfirm"
+            android:exported="true" />
+        <activity
+            android:name=".FeedbackCRUD"
+            android:exported="true" />
+        <activity
+            android:name=".Display_Delivery_Det"
+            android:exported="true" />
+        <activity
+            android:name=".Delivery_Main"
+            android:exported="true" />
+        <activity
+            android:name=".Delivery_Crud_Op"
+
+
             android:name=".RVActivity_P"
             android:exported="true" />
         <activity
@@ -47,6 +62,7 @@
             android:exported="true" />
         <activity
             android:name=".Cardpayment"
+
 
             android:exported="true" />
         <activity
