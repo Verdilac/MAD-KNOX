@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+            android:name=".RVActivity_P"
+            android:exported="true" />
+        <activity
             android:name=".Product_Listing_Page"
             android:exported="true" />
         <activity

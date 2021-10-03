@@ -1,6 +1,12 @@
 package com.example.mad_knox;
 
+import com.google.firebase.database.Exclude;
+
 public class ProductData {
+
+    //Key
+    @Exclude
+    private String key;
 
     // Columns of Product table in db
     private String Product_Name;
@@ -25,6 +31,14 @@ public class ProductData {
 
 
     // Getters and Setters
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public String getProduct_Name() {
         return Product_Name;
