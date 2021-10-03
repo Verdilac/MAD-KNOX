@@ -4,15 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
@@ -30,6 +26,8 @@ public class Product_Details_Page extends AppCompatActivity {
         setContentView(R.layout.activity_product_details_page);
 
         back_arrow_btn = (ImageView) findViewById(R.id.back_arrow_btn);
+
+//        final EditText
 
         p_name = (EditText) findViewById(R.id.p_name);
         p_description = (EditText) findViewById(R.id.p_description);

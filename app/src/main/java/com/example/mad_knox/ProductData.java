@@ -2,7 +2,9 @@ package com.example.mad_knox;
 
 import com.google.firebase.database.Exclude;
 
-public class ProductData {
+import java.io.Serializable;
+
+public class ProductData implements Serializable {
 
     //Key
     @Exclude
