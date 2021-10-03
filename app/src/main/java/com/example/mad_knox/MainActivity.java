@@ -16,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
 
 
+
     Button submit,redirect,recy;
 
 
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
+
 
 
 
