@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
         Button btn_pinto = findViewById(R.id.btn_pinto);
         btn_pinto.setOnClickListener(v->{
             Intent intent = new Intent(this,Home_Page.class);
