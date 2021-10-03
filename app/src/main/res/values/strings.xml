@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">MAD-KNOX</string>
+    <string name="et_Feedname">Enter Your Name</string>
+    <string name="et_Feedemail">Enter Your Email Address</string>
+    <string name="et_Feedreview">Leave a Review</string>
+    <string name="tv_yourFeedback">Your Feedback</string>
+    <string name="tv_quality">Quality</string>
+    <string name="rd_btn_Q_good">Good</string>
+    <string name="re_btn_Q_Ex">Excellent</string>
+    <string name="tv_response">Timely Response</string>
+    <string name="tv_Satisfaction">Overall Satisfaction</string>
+    <string name="rd_btn_T_good">Good</string>
+    <string name="rd_btn_T_Ex">Excellent</string>
+    <string name="rd_btn_O_good">Good</string>
+    <string name="rd_btn_O_Ex">Excellent</string>
+    <string name="btn_feed_cancel">Cancel</string>
+    <string name="btn_feed_submit">Submit</string>
+    <string name="btn_Feed_Del">Delete</string>
+    <string name="btn_Feed_Edit">Edit</string>
+    <string name="btn_Feed_Confirm">Confirm</string>
+    <string name="feed_success_message">Your Feedback has been Received Successfully!</string>
+    <string name="feed_thank">Thanks for Your Feedback...</string>
+    <string name="btn_back_feed">Back</string>
 </resources>
