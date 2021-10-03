@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "300415903422",
+    "project_id": "mad-knox-7770b",
+    "storage_bucket": "mad-knox-7770b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300415903422:android:4bb235ed9221a2d363a0ef",
+        "android_client_info": {
+          "package_name": "com.example.mad_knox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300415903422-5j9vn4se9fjice0rdifs66b9bhihubel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD45gnJ_Ct72a7BW-s2UW33YoLEuekbyfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300415903422-5j9vn4se9fjice0rdifs66b9bhihubel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MAD-KNOX/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/software installation file/AndroidStudioProjects/ITP_Ushan/MAD-KNOX/app/src/main/res/layout/activity_delivery_crud_op.xml" value="0.33" />
+        <entry key="..\:/software installation file/AndroidStudioProjects/ITP_Ushan/MAD-KNOX/app/src/main/res/layout/activity_delivery_main.xml" value="0.33" />
+        <entry key="..\:/software installation file/AndroidStudioProjects/ITP_Ushan/MAD-KNOX/app/src/main/res/layout/activity_display_delivery_det.xml" value="0.33" />
+        <entry key="..\:/software installation file/AndroidStudioProjects/ITP_Ushan/MAD-KNOX/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -12,5 +16,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>

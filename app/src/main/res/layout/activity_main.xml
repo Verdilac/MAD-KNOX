@@ -4,15 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="ViewDeliveryMain"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_info"-->
+    <!--        android:layout_width="297dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="64dp"-->
+    <!--        android:text="@string/tv_info"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_name"-->
+    <!--        android:layout_width="297dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/et_name"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_info" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_phone"-->
+    <!--        android:layout_width="297dp"-->
+    <!--        android:layout_height="41dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/et_phone"-->
+    <!--        android:inputType="phone"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_name" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_email"-->
+    <!--        android:layout_width="298dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/et_email"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_phone" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_shippingAdd"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="45dp"-->
+    <!--        android:text="@string/tv_shippingAdd"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_email" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_ShippingAdd"-->
+    <!--        android:layout_width="301dp"-->
+    <!--        android:layout_height="43dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/et_shippingAdd"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_shippingAdd" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_city"-->
+    <!--        android:layout_width="302dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/et_city"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_ShippingAdd" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_Shipping_Cancel"-->
+    <!--        android:layout_width="165dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:backgroundTint="#3B3C36"-->
+    <!--        android:text="@string/btn_Shipping_Cancel"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/btn_Shipping_Save"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_city" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_Shipping_Save"-->
+    <!--        android:layout_width="165dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:backgroundTint="#848482"-->
+    <!--        android:onClick="openDeliveryCrud"-->
+    <!--        android:text="@string/btn_Shipping_Save"-->
+    <!--        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Shipping_Cancel"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btn_Shipping_Cancel"-->
+    <!--        app:rippleColor="@color/teal_700" />-->
+
+
+    <Button
+        android:id="@+id/btn_start_delivery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:onClick="ViewDeliveryMain"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
