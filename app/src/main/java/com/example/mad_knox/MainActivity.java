@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button submit,redirect,recy;
     //payment merged with productlisting
 
-
+//paydelprod
 
 
     @Override
