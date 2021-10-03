@@ -52,52 +52,97 @@
                 android:orientation="vertical"
                 android:layout_margin="10dp">
 
-                <EditText
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enter Product Name"
-                    android:layout_margin="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_product_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enter Product Category"
-                    android:layout_margin="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_product_category"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enter Product Price"
-                    android:layout_margin="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Enter Quantity"
-                    android:layout_margin="10dp"/>
+                    android:id="@+id/edit_product_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Product Quantity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
 
                 <EditText
-                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_product_quantity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Product Description"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="text|textMultiLine"
                     android:gravity="top"
-                    android:layout_margin="10dp"
-                    android:text="Enter Product Description"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edit_product_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Product Image Link"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Enter link for product image"
-                    android:layout_margin="10dp"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Enter Warranty Information"
-                    android:layout_margin="10dp"/>
-
-
+                    android:id="@+id/edit_product_image_link"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
 
             </LinearLayout>
 
@@ -111,11 +156,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:text="Add Information"/>
+                android:layout_margin="10dp"
+                android:text="Add Information"
+                android:id="@+id/btn_add_information"/>
 
 
         </LinearLayout>

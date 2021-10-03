@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "322603049920",
+    "project_id": "selleroutlet-k",
+    "storage_bucket": "selleroutlet-k.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322603049920:android:0c9f0af7621b918ffe9e25",
+        "android_client_info": {
+          "package_name": "com.example.mad_knox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322603049920-gdaie73ob60jbl3gec7gvi4ocgs4fld1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSF1SF8YdBbBlagSzPWDadysLZiyjxfrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322603049920-gdaie73ob60jbl3gec7gvi4ocgs4fld1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
