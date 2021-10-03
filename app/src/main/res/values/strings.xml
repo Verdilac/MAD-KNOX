@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">MAD-KNOX</string>
+    <string name="heading">KNOX</string>
+    <string name="slogan">For all your needs</string>
+    <string name="login_email">Email Address</string>
+    <string name="login_password">Password</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="reg_name">Name</string>
+    <string name="reg_email">Email Address</string>
+    <string name="reg_password">Password</string>
+    <string name="register_btn">Register</string>
+    <string name="reg_phone">Phone Number</string>
+    <string name="name_id">Enter the Name</string>
+    <string name="product_details_heading">Product Details</string>
+    <string name="p_name">Enter Product Name</string>
+    <string name="p_description">Enter Product Description</string>
+    <string name="p_price">Enter Product Price</string>
+    <string name="p_location">Enter Product Location</string>
+    <string name="add_product_btn">Add Product</string>
+    <string name="product_img_upload_btn">Upload Image</string>
+    <string name="cart_heading">Shopping Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="p_img_url">Enter Image URL</string>
+    <string name="open_recycler_view">Open</string>
 </resources>
