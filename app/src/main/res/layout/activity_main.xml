@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+
+
 
 
 
@@ -14,10 +17,17 @@
         android:id="@+id/recy_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="16dp"
         android:text="Recycler View"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.381"
+
+        android:layout_marginTop="68dp"
+        android:text="Recycler View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,14 +36,23 @@
         android:id="@+id/button_redirect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginBottom="494dp"
+
+        android:layout_marginBottom="168dp"
+
         android:onClick="redirection"
-        android:text="Button"
+        android:text="payment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_reupdate" />
+
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <Button
         android:id="@+id/btn_reupdate"
@@ -68,6 +87,7 @@
         android:text="Dispute List"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toEndOf="@+id/btn_reupdate"
         app:layout_constraintTop_toBottomOf="@+id/btn_dispute"
         app:layout_constraintVertical_bias="0.0" />
@@ -84,4 +104,22 @@
         app:layout_constraintTop_toBottomOf="@+id/button_redirect" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dispute"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/btn_pinto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pinto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
 
