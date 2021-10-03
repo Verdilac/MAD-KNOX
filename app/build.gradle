@@ -42,33 +42,25 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'com.google.firebase:firebase-database:20.0.2'
-    implementation 'com.google.firebase:firebase-auth:21.0.1'
+
+
+
+
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    //Recycler View (including List adapter)
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    //Material Library (for Fab and other material stuff)
-    implementation 'com.google.android.material:material:1.1.0'
 
-    // Card View
+
+
+
+
+    //recycler view
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
     implementation "androidx.cardview:cardview:1.0.0"
-
-    // ViewModel & Livedata
-    def lifecycle_version = "2.2.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
-
-    //Navigation Component
-    def nav_version = "2.3.0"
-    implementation "androidx.navigation:navigation-fragment:$nav_version"
-    implementation "androidx.navigation:navigation-ui:$nav_version"
-
-    //Glide Library
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-
-
+    //swiper
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
 }

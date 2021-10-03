@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "789682742284",
+    "firebase_url": "https://master-test-87833-default-rtdb.firebaseio.com",
+    "project_id": "master-test-87833",
+    "storage_bucket": "master-test-87833.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789682742284:android:3f640333041a0fa937ba29",
+        "android_client_info": {
+          "package_name": "com.example.mad_knox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789682742284-7cedmlf87ccd44e5sdnn6b5ihfagcqee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDhUKdPG1z-qI9Ch3q5VzjXaDl6lpB_YM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789682742284-7cedmlf87ccd44e5sdnn6b5ihfagcqee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
