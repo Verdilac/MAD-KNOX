@@ -102,11 +102,11 @@ public class Product_Details_Page extends AppCompatActivity {
 
                 // UPDATE
                 HashMap<String,Object> hashMap = new HashMap<>();
-                hashMap.put("Product_Name",p_name.getText().toString());
-                hashMap.put("Product_Desc",p_description.getText().toString());
-                hashMap.put("Product_Price",Integer.parseInt(p_price.getText().toString()));
-                hashMap.put("Product_Location",p_location.getText().toString());
-                hashMap.put("Product_Img",p_img_url.getText().toString());
+                hashMap.put("product_Name",p_name.getText().toString());
+                hashMap.put("product_Desc",p_description.getText().toString());
+                hashMap.put("product_Price",Integer.parseInt(p_price.getText().toString()));
+                hashMap.put("product_Location",p_location.getText().toString());
+                hashMap.put("product_Img",p_img_url.getText().toString());
 
                 dao.update(prod_edit.getKey(),hashMap).addOnSuccessListener(suc -> {
                     Toast.makeText(this, "Data Updated Successfully", Toast.LENGTH_SHORT).show();
