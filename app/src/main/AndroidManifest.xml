@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mad_knox">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+
             android:name=".FeedbackConfirm"
             android:exported="true" />
         <activity
@@ -23,6 +26,41 @@
             android:exported="true" />
         <activity
             android:name=".Delivery_Crud_Op"
+
+
+            android:name=".RVActivity_P"
+            android:exported="true" />
+        <activity
+            android:name=".Product_Listing_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Shopping_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Product_Details_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Home_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Register_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Login_Page"
+            android:exported="true" />
+        <activity
+            android:name=".dispute.DisputeHandle"
+            android:exported="true" />
+        <activity
+            android:name=".CardUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".Rvpayments"
+            android:exported="true" />
+        <activity
+            android:name=".Cardpayment"
+
+
             android:exported="true" />
         <activity
             android:name=".MainActivity"
