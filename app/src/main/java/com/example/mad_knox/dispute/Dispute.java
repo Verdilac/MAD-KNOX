@@ -1,6 +1,17 @@
 package com.example.mad_knox.dispute;
 
-public class Dispute {
+import com.google.firebase.database.Exclude;
+
+import java.io.Serializable;
+
+public class Dispute implements Serializable {
+
+    @Exclude
+    private String key;
+    private String reason;
+    private  String experience;
+
+
 
     public String getReason() {
         return reason;
@@ -18,9 +29,14 @@ public class Dispute {
         this.experience = experience;
     }
 
-    private String reason;
-   private  String experience;
 
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
 }

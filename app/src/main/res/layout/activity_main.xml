@@ -98,4 +98,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.045" />
 
+    <Button
+        android:id="@+id/btn_disputelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Dispute List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recy_view"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dispute"
+        app:layout_constraintVertical_bias="0.149" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

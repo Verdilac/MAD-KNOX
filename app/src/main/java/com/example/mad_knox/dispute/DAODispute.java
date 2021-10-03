@@ -4,6 +4,7 @@ import com.example.mad_knox.Card;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 public class DAODispute {
 
@@ -19,6 +20,17 @@ public class DAODispute {
     public Task<Void> add(Dispute dispute){
 
         return databaseReference.push().setValue(dispute);
+    }
+
+
+    public Task<Void> remove(String key){
+        return  databaseReference.child(key).removeValue();
+    }
+
+    public Query get(){
+
+
+        return databaseReference.orderByKey();
     }
 
 
