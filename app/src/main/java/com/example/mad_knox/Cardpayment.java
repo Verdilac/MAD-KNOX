@@ -25,8 +25,9 @@ public class Cardpayment extends AppCompatActivity {
     TextInputLayout cardyearlay;
     TextInputLayout cardcvvlay;
     Button btn_pay;
-    String name;
 
+
+    String name;
     String cardnumber;
     String cardmonth;
     String cardyear;

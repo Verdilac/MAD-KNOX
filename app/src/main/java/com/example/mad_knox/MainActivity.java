@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.mad_knox.dispute.DisputeHandle;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -48,7 +49,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button btn_dispute = findViewById(R.id.btn_dispute);
 
+        btn_dispute.setOnClickListener(v->{
+            Intent intent = new Intent(this, DisputeHandle.class);
+            startActivity(intent);
+        });
 
 
 

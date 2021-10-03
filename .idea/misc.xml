@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MAD-KNOX/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/drawable/border.xml" value="0.3828125" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_card_update.xml" value="0.25" />
-        <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_cardpayment.xml" value="0.33" />
+        <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_cardpayment.xml" value="0.22" />
+        <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_dispute_handle.xml" value="0.36666666666666664" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_main.xml" value="0.2463768115942029" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/activity_rvpayments.xml" value="0.3625" />
         <entry key="..\:/madmaster/MAD-KNOX/app/src/main/res/layout/layout_item.xml" value="0.3625" />
