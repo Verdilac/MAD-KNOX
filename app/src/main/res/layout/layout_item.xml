@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/selleroutlet"
+            android:padding="5dp"
+            android:id="@+id/img_list"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Outlet Name:"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txt_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Outlet Category:"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txt_category"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Outlet Description:"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txt_description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Outlet Location:"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txt_location"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
