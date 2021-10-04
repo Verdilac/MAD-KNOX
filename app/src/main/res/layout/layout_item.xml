@@ -4,6 +4,15 @@
     android:layout_height="wrap_content"
     android:layout_margin="2dp">
 
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="&#8942;"
+        android:textSize="30sp"
+        android:id="@+id/txt_option"
+        android:layout_gravity="right"
+        android:textStyle="bold"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -88,13 +97,6 @@
                 android:textSize="20sp"
                 android:layout_marginBottom="5dp"
                 android:id="@+id/txt_location"/>
-
-
-
-
-
-
-
 
         </LinearLayout>
 

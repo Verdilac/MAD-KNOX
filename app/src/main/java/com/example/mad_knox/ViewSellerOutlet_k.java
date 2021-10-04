@@ -69,6 +69,7 @@ public class ViewSellerOutlet_k extends AppCompatActivity
                 for(DataSnapshot data : snapshot.getChildren())
                 {
                     Outlet out = data.getValue(Outlet.class);
+                    out.setKey(data.getKey());
                     outs.add(out);
                     key = data.getKey();
 

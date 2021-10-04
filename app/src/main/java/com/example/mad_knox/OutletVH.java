@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class OutletVH extends RecyclerView.ViewHolder
 {
-    public TextView txt_name,txt_category, txt_description, txt_location;
+    public TextView txt_name,txt_category, txt_description, txt_location, txt_option;
 
     public OutletVH(@NonNull View itemView)
     {
@@ -17,6 +17,7 @@ public class OutletVH extends RecyclerView.ViewHolder
         txt_category = itemView.findViewById(R.id.txt_category);
         txt_description = itemView.findViewById(R.id.txt_description);
         txt_location = itemView.findViewById(R.id.txt_location);
+        txt_option = itemView.findViewById(R.id.txt_option);
 
     }
 

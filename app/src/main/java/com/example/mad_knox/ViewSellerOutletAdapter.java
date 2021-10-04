@@ -1,9 +1,13 @@
 package com.example.mad_knox;
 
 import android.content.Context;
+import android.content.Intent;
+import android.text.style.UpdateAppearance;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,6 +46,41 @@ public class ViewSellerOutletAdapter extends RecyclerView.Adapter<RecyclerView.V
         vh.txt_category.setText(out.getCategory());
         vh.txt_description.setText(out.getDescription());
         vh.txt_location.setText(out.getLocation());
+        vh.txt_option.setOnClickListener(v->
+        {
+            PopupMenu popupMenu =new PopupMenu(context, vh.txt_option);
+            popupMenu.inflate(R.menu.option_menu);
+            popupMenu.setOnMenuItemClickListener(item->
+            {
+                switch (item.getItemId())
+                {
+                    case R.id.menu_update:
+                        Intent intent = new Intent (context,CreateSellerOutlet_k.class);
+                        intent.putExtra("UPDATE" ,out);
+                        context.startActivity(intent);
+
+                        break;
+
+                    case R.id.menu_delete:
+                        DAOOutlet dao=new DAOOutlet();
+                        dao.remove(out.getKey()).addOnSuccessListener(suc->
+                        {
+                            Toast.makeText(context, "Record deleted successfully", Toast.LENGTH_SHORT).show();
+                            notifyItemRemoved(position);
+                        }).addOnFailureListener(er->
+                        {
+                            Toast.makeText(context, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+                        });
+
+                        break;
+
+                }
+
+                return false;
+            });
+
+            popupMenu.show();
+        });
 
     }
 

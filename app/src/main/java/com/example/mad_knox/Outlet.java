@@ -1,7 +1,15 @@
 package com.example.mad_knox;
 
-public class Outlet
+import com.google.firebase.database.Exclude;
+
+import java.io.Serializable;
+
+public class Outlet implements Serializable
 {
+
+
+    @Exclude
+    private String key;
     private String name;
     private String category;
     private String description;
@@ -44,5 +52,13 @@ public class Outlet
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }
