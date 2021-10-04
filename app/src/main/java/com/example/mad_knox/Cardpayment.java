@@ -77,11 +77,27 @@ public class Cardpayment extends AppCompatActivity {
             card.setMonth(cardmonth);
             card.setYear(cardyear);
             card.setCvv(cardcvv);
-            dao.add(card).addOnSuccessListener(suc->{
-                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
-            }).addOnFailureListener(er->{
-                Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
-            });
+
+            if(cardnumber.length() == 16)
+            {
+                if (cardcvv.length() == 3) {
+                    dao.add(card).addOnSuccessListener(suc->{
+
+                        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+                    }).addOnFailureListener(er->{
+                        Toast.makeText(this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+                    });
+                }
+                else Toast.makeText(this, "Cvv Invalid", Toast.LENGTH_SHORT).show();
+
+            }
+            else {
+                Toast.makeText(this, "Card Number Invalid", Toast.LENGTH_SHORT).show();
+            }
+
+
+
+
 
 
 //            HashMap<String,Object> hashMap = new HashMap<>();
