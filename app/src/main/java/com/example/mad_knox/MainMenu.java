@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.mad_knox.dispute.DisputeHandle;
 import com.example.mad_knox.dispute.RVDispute;
@@ -18,6 +19,7 @@ public class MainMenu extends AppCompatActivity {
 
         Button login_menu_btn,home_menu_btn,payment_menu_btn,feedback_menu_btn,seller_o_menu_btn,delivery_menu_btn,dispute_btn,disputelist_btn;
 
+        ImageView back_arrow_btn = (ImageView) findViewById(R.id.back_arrow_btn);
 
         login_menu_btn = findViewById(R.id.login_menu_btn);
         home_menu_btn = findViewById(R.id.home_menu_btn);
@@ -28,6 +30,11 @@ public class MainMenu extends AppCompatActivity {
         dispute_btn = findViewById(R.id.dispute_btn);
         disputelist_btn = findViewById(R.id.disputelist_btn);
 
+
+        back_arrow_btn.setOnClickListener(v->{
+            Intent intent = new Intent(this,Home_Page.class);
+            startActivity(intent);
+        });
 
 
         login_menu_btn.setOnClickListener(v->{
@@ -67,6 +74,8 @@ public class MainMenu extends AppCompatActivity {
             Intent intent = new Intent(this, RVDispute.class);
             startActivity(intent);
         });
+
+
 
 
 
