@@ -20,6 +20,8 @@ public class Home_Page extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         profile_btn = (ImageView) findViewById(R.id.profile_btn);
+        cart_btn = (ImageView) findViewById(R.id.cart_btn);
+        hamburger_menu = (ImageView) findViewById(R.id.hamburger_menu);
         card1 = (CardView) findViewById(R.id.card1);
 
         // Profile Btn
@@ -39,6 +41,18 @@ public class Home_Page extends AppCompatActivity {
                 startActivity(product_details_form_intent);
             }
         });
+
+        hamburger_menu.setOnClickListener(v->{
+            Intent intent = new Intent(this,MainMenu.class);
+            startActivity(intent);
+        });
+        cart_btn.setOnClickListener(v->{
+            Intent intent = new Intent(getApplicationContext(),Cardpayment.class);
+            startActivity(intent);
+        });
+
+
+
 
     }
 }

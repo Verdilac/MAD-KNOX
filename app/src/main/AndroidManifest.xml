@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
-
+            android:name=".MainMenu"
+            android:exported="true" />
+        <activity
             android:name=".FeedbackConfirm"
             android:exported="true" />
         <activity
@@ -62,8 +64,6 @@
             android:exported="true" />
         <activity
             android:name=".Cardpayment"
-
-
             android:exported="true" />
         <activity
             android:name=".MainActivity"
