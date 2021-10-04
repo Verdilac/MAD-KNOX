@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <Button
+        android:id="@+id/login_menu_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#349CD5"
+        android:text="Login/Register"
+        app:layout_constraintBottom_toTopOf="@+id/home_menu_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/home_menu_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/payment_menu_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_menu_btn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/payment_menu_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#349CD5"
+        android:text="Payment"
+        app:layout_constraintBottom_toTopOf="@+id/delivery_menu_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_menu_btn" />
+
+    <Button
+        android:id="@+id/feedback_menu_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#349CD5"
+        android:text="Feedback"
+        app:layout_constraintBottom_toTopOf="@+id/seller_o_menu_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_menu_btn" />
+
+    <Button
+        android:id="@+id/seller_o_menu_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text="Sellers Outlet"
+        app:layout_constraintBottom_toTopOf="@+id/dispute_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_menu_btn" />
+
+    <Button
+        android:id="@+id/delivery_menu_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text="Delivery"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_menu_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_menu_btn" />
+
+    <Button
+        android:id="@+id/dispute_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="#349CD5"
+        android:text="Dispute"
+        app:layout_constraintBottom_toTopOf="@+id/disputelist_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_o_menu_btn" />
+
+    <Button
+        android:id="@+id/disputelist_btn"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text=" Pending Disputes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dispute_btn" />
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AA1B1B"
+        android:text="Menu"
+        android:textColor="#222F73"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_menu_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <ImageView
+        android:id="@+id/back_arrow_btn"
+        android:layout_width="41dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back_arrow_icon"
+        app:tint="#0C3E88" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
