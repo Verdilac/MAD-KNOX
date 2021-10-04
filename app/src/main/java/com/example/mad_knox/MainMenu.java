@@ -60,10 +60,10 @@ public class MainMenu extends AppCompatActivity {
             Intent intent = new Intent(this,Delivery_Main.class);
             startActivity(intent);
         });
-//        seller_o_menu_btn.setOnClickListener(v->{
-//            Intent intent = new Intent(this,Delivery_Main.class);
-//            startActivity(intent);
-//        });
+        seller_o_menu_btn.setOnClickListener(v->{
+            Intent intent = new Intent(this,CreateSellerOutlet_k.class);
+            startActivity(intent);
+        });
 
         dispute_btn.setOnClickListener(v->{
             Intent intent = new Intent(this, DisputeHandle.class);

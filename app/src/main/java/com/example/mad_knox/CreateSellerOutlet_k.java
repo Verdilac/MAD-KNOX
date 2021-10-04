@@ -2,9 +2,11 @@ package com.example.mad_knox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.HashMap;
@@ -90,5 +92,13 @@ public class CreateSellerOutlet_k extends AppCompatActivity {
 
 
         });
+
+        ImageView sellerlist_k = (ImageView) findViewById(R.id.sellerlist_k);
+        sellerlist_k.setOnClickListener(v->{
+            Intent intent = new Intent(this,ViewSellerOutlet_k.class);
+            startActivity(intent);
+        });
+
+
     }
 }

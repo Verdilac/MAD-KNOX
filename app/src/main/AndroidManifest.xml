@@ -21,7 +21,6 @@
             android:name=".MainMenu"
             android:exported="true" />
         <activity
-        <activity
             android:name=".FeedbackConfirm"
             android:exported="true" />
         <activity

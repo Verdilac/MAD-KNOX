@@ -41,6 +41,15 @@ public class Display_Delivery_Det extends AppCompatActivity {
         et_email.setText(email);
         et_ShippingAdd.setText(ShippingAdd);
         et_city.setText(city);
+
+
+        Button btn_Proceed_payment = findViewById(R.id.btn_Proceed_payment);
+        btn_Proceed_payment.setOnClickListener(v->{
+            Intent intent1 = new Intent(this,MainMenu.class);
+            startActivity(intent1);
+        });
+
+
     }
 
     // Intent for back to main page in Delivery
