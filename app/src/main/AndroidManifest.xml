@@ -12,8 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADKNOX">
         <activity
+            android:name=".ViewSellerOutlet_k"
+            android:exported="true" />
+        <activity
+            android:name=".CreateSellerOutlet_k"
+            android:exported="true" />
+        <activity
             android:name=".MainMenu"
             android:exported="true" />
+        <activity
         <activity
             android:name=".FeedbackConfirm"
             android:exported="true" />

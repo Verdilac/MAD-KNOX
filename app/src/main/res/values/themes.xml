@@ -3,7 +3,9 @@
 
 
 
+
     <style name="Theme.MADKNOX" parent="Theme.MaterialComponents.Light.NoActionBar">
+
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
