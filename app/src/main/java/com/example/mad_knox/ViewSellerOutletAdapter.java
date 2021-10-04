@@ -2,7 +2,6 @@ package com.example.mad_knox;
 
 import android.content.Context;
 import android.content.Intent;
-import android.text.style.UpdateAppearance;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +32,7 @@ public class ViewSellerOutletAdapter extends RecyclerView.Adapter<RecyclerView.V
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
-        View view = LayoutInflater.from(context).inflate(R.layout.layout_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.layout_item_k,parent,false);
         return new OutletVH(view);
     }
 
@@ -49,7 +48,7 @@ public class ViewSellerOutletAdapter extends RecyclerView.Adapter<RecyclerView.V
         vh.txt_option.setOnClickListener(v->
         {
             PopupMenu popupMenu =new PopupMenu(context, vh.txt_option);
-            popupMenu.inflate(R.menu.option_menu);
+            popupMenu.inflate(R.menu.option_menu_k);
             popupMenu.setOnMenuItemClickListener(item->
             {
                 switch (item.getItemId())
